@@ -71,6 +71,7 @@
 
 body,
 h1,
+h2,
 p,
 ul,
 ol {
@@ -128,7 +129,7 @@ main {
 h1 {
   align-self: stretch;
   color: var(--color-stone-900);
-  font-family: var(--text-3-font);
+  font-family: var(--font-heading);
   font-size: 36px;
   font-style: normal;
   font-weight: 400;
@@ -139,7 +140,7 @@ h1 {
   align-self: stretch;
 
   color: var(--color-stone-600);
-  font-family: var(--text-4-font);
+  font-family: var(--font-body);
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -235,7 +236,7 @@ h1 {
 .instructions > h2 {
   align-self: stretch;
   color: var(--color-brown-800);
-  font-family: var(--text-3-font);
+  font-family: var(--font-heading);
   font-size: var(--text-3-size);
   font-style: normal;
   font-weight: 400;
@@ -265,7 +266,7 @@ h1 {
 .nutrition-table > h2 {
   align-self: stretch;
   color: var(--color-brown-800);
-  font-family: var(--text-3-font);
+  font-family: var(--font-heading);
   font-size: var(--text-3-size);
   font-style: normal;
   font-weight: 400;
@@ -275,7 +276,7 @@ h1 {
 .nutrition-table p {
   align-self: stretch;
   color: var(--color-stone-600);
-  font-family: var(--font-heading);
+  font-family: var(--font-body);
   font-size: var(--text-4-size);
   font-style: normal;
   font-weight: 400;
