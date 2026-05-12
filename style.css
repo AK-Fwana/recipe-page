@@ -1,0 +1,316 @@
+/* Importing the Inter font from Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Young+Serif&display=swap");
+
+/* Root variables for colors, fonts, and spacing */
+:root {
+  /* Colors Rose*/
+  --color-rose-800: hsl(332, 51%, 32%);
+  --color-rose-50: hsl(330, 100%, 98%);
+
+  /* Colors stone */
+  --color-stone-900: hsl(24, 5%, 18%);
+  --color-stone-150: hsl(30, 18%, 87%);
+  --color-stone-100: hsl(30, 54%, 90%);
+  --color-stone-600: hsl(30, 10%, 34%);
+
+  /* Colors Brown */
+  --color-brown-800: hsl(14, 45%, 36%);
+  /* Colors White */
+  --color-white: hsl(0, 0%, 100%);
+
+  /* Typography */
+
+  /* Text Preset 1 */
+  --text-1-font: "Young Serif", serif;
+  --text-1-size: 40px;
+  --text-1-line-height: 100%;
+  --text-1-letter-spacing: 0px;
+
+  /* Text Preset 2 */
+  --text-2-font: "Outfit", sans-serif;
+  --text-2-size: 14px;
+  --text-2-line-height: 150%;
+  --text-2-letter-spacing: 0px;
+
+  /* Text Preset 3 */
+  --text-3-font: "Young Serif", serif;
+  --text-3-size: 28px;
+  --text-3-line-height: 100%;
+  --text-3-letter-spacing: 0px;
+
+  /* Text Preset 4 */
+  --text-4-font: "Outfit", regular;
+  --text-4-size: 16px;
+  --text-4-line-height: 150%;
+  --text-4-letter-spacing: 0px;
+
+  --font-body: "Outfit", sans-serif;
+  --font-heading: "Young Serif", serif;
+  --font-weight-regular: 400;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  /* Spacing */
+  --spacing-100: 8px;
+  --spacing-150: 12px;
+  --spacing-200: 16px;
+  --spacing-300: 24px;
+  --spacing-400: 32px;
+  --spacing-500: 40px;
+  --spacing-600: 48px;
+  --spacing-1600: 128px;
+}
+
+/* Reset default browser styles and set box-sizing to border-box for all elements */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+p,
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol {
+  padding-left: 24px;
+}
+
+/* Global styles for the body */
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  font-family: var(--font-body);
+  background-color: var(--color-white);
+  color: var(--color-stone-600);
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.top-image {
+  width: 100%;
+}
+
+main {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.recipe-card {
+  display: flex;
+  padding: var(--spacing-500) var(--spacing-400);
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--spacing-400);
+  align-self: stretch;
+}
+
+.recipe-title {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--spacing-300);
+  align-self: stretch;
+}
+
+h1 {
+  align-self: stretch;
+  color: var(--color-stone-900);
+  font-family: var(--text-3-font);
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+}
+
+.recipe-title p {
+  align-self: stretch;
+
+  color: var(--color-stone-600);
+  font-family: var(--text-4-font);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.preparation {
+  display: flex;
+  padding: var(--spacing-300);
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--spacing-200);
+  align-self: stretch;
+
+  border-radius: var(--spacing-150);
+  background-color: var(--color-rose-50);
+}
+
+.preparation-title {
+  align-self: stretch;
+
+  color: var(--color-rose-800);
+  font-family: var(--font-body);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: var(--font-weight-semibold);
+  line-height: 100%;
+}
+
+.preparation ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--spacing-100);
+  align-self: stretch;
+}
+
+.ingredients,
+.instructions {
+  border-bottom: 1px solid var(--color-stone-150);
+}
+
+.nutrition-table tr:last-child {
+  border-bottom: none;
+}
+
+.ingredients,
+.instructions {
+  padding-bottom: var(--spacing-300);
+}
+
+.instructions {
+  padding-top: var(--spacing-300);
+}
+
+.ingredients {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--spacing-300);
+  align-self: stretch;
+}
+
+.ingredients > h2 {
+  align-self: stretch;
+  color: var(--color-brown-800);
+  font-family: var(--font-heading);
+  font-size: var(--text-3-size);
+  font-style: normal;
+  font-weight: 400;
+  line-height: var(--text-3-line-height);
+}
+
+.ingredients ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--spacing-100);
+  align-self: stretch;
+}
+.ingredients li::marker {
+  color: var(--color-brown-800);
+}
+
+.instructions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--spacing-300);
+  align-self: stretch;
+}
+
+.instructions > h2 {
+  align-self: stretch;
+  color: var(--color-brown-800);
+  font-family: var(--text-3-font);
+  font-size: var(--text-3-size);
+  font-style: normal;
+  font-weight: 400;
+  line-height: var(--text-3-line-height);
+}
+
+.instructions ol {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--spacing-100);
+  align-self: stretch;
+}
+.instructions li::marker {
+  color: var(--color-brown-800);
+  font-weight: var(--font-weight-bold);
+}
+
+.nutrition-table {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--spacing-300);
+  align-self: stretch;
+}
+
+.nutrition-table > h2 {
+  align-self: stretch;
+  color: var(--color-brown-800);
+  font-family: var(--text-3-font);
+  font-size: var(--text-3-size);
+  font-style: normal;
+  font-weight: 400;
+  line-height: var(--text-3-line-height);
+}
+
+.nutrition-table p {
+  align-self: stretch;
+  color: var(--color-stone-600);
+  font-family: var(--font-heading);
+  font-size: var(--text-4-size);
+  font-style: normal;
+  font-weight: 400;
+  line-height: var(--text-4-line-height);
+}
+
+.nutrition-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: var(--spacing-100) 0;
+}
+
+th {
+  text-align: left;
+  font-weight: 400;
+  color: var(--color-stone-600);
+  font-family: var(--font-body);
+  font-size: var(--text-4-size);
+  font-style: normal;
+  font-weight: 400;
+  line-height: var(--text-4-line-height);
+}
+
+td {
+  color: var(--color-brown-800);
+  font-family: var(--font-body);
+  font-size: var(--text-4-size);
+  font-weight: 700;
+  font-style: normal;
+  line-height: var(--text-4-line-height);
+}
+.nutrition-table tr {
+  border-bottom: 1px solid var(--color-stone-150);
+}
