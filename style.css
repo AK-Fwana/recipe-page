@@ -315,3 +315,8 @@ td {
 .nutrition-table tr {
   border-bottom: 1px solid var(--color-stone-150);
 }
+
+.attribution {
+  text-align: center;
+  padding: var(--spacing-300);
+}
