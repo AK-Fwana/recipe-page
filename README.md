@@ -1,6 +1,6 @@
 # Frontend Mentor - Recipe page solution
 
-This is a solution to the [Recipe page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/recipe-page-KiTsR8QQKm). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+This is a solution to the [Recipe page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/recipe-page-KiTsR8QQKm). Frontend Mentor challenges help me improve my coding skills by building realistic projects.
 
 ## Table of contents
 
@@ -25,8 +25,8 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 
 ### Links
 
-- Solution URL: (https://your-solution-url.com)
-- Live Site URL:(https://your-live-site-url.com)
+- Solution URL: (https://github.com/AK-Fwana/recipe-page)
+- Live Site URL:(https://ak-fwana.github.io/recipe-page/)
 
 ## My process
 
